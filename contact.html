@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= "stylesheets/nav-bar.css" type="text/css" >
+    <link rel="stylesheet" href= "stylesheets/body-html.css" type="text/css" >
+    <style>
+         body{
+            background-image: url("images/background.png");
+         }
+        .contact-form{
+            text-align:center; 
+            font-size:25px; 
+        }
+        input{
+            height: 30px;
+            width:350px;
+            margin:5px;
+            font-size: 20px;
+        }
+        .about{
+            font-size: 25px;
+            margin:10px;
+        }
+        .message{
+            width: 250px;
+            height: 100px;
+            margin-bottom: 10px;
+            
+        }
+        button{
+            display: block;
+            height: 50px;
+            width: 250px;
+            font-size: 25px;
+            text-align: center;
+            margin-left: 46%;
+            margin-right: 64%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            background-color: #2a9d8f;
+            color:white;
+            border-radius: 25px;
+            border:none;
+        }
+        button:hover{
+            background-color: #006d77;
+            
+            font-size:30px ;
+        }
+        label{
+            width: 150px;
+            text-align: right;
+            display: inline-block;
+            
+        }
+        textarea{
+            margin-top: 10px;
+            height: 60px;
+            width:350px;
+        }
+        input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #submitted{
+            font-size:15px;
+            text-align: center;
+            margin-left:70px;
+        }
+        .form{
+            margin: 25px;
+        }
+
+    </style>
+    <script>
+        function afterSubmit(){
+            document.getElementById("submitted").innerHTML="Your form has been submitted successfully";
+        }
+        </script>
+</head>
+<body>
+    <header>
+    <div class="nav">
+        <a href="index.html" class="button">HOME</a>
+        <a href="resume.html" class="button">RESUME</a>
+        <a href="blog.html" class="button">BLOG</a>
+        <a href="research.html" class="button">RESEARCH</a>
+        <a href="contact.html" class="button" style="margin-right:10px;">CONTACT</a>
+    </div>
+</header>
+<section>
+    <h2 style="font-size: 40px; margin:10px;">CONTACT</h2>
+    <div class="about">
+        &#9993;&nbsp;bibekbhandari120@gmail.com<br>
+        &#9990;&nbsp;+977-9867152541
+    </div>
+    <div class="contact-form" >
+        <u>Contact me for more information or queries</u>
+        <form class="form" target="_self">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name" ><br>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Enter your email"><br>
+            <label>Contact no</label>
+            <input type="number" name="contact-number" placeholder="Enter your contact number" ><br>
+            <label>Message</label>
+            <textarea name="message" placeholder="Write your message"></textarea><br>
+            <button type="reset">Clear Form</button>
+            <button id="submit" type="submit" onclick="afterSubmit()">Submit</button>    
+            <p id="submitted"></p>
+        </form>
+       </div>
+
+</section>
+    <footer>
+        &copy;Bibek Bhandari
+    </footer>
+</body>
+</html>
