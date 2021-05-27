@@ -4,10 +4,10 @@ html,body{
 }
 body{
     
-    font-family: Poppins;
+    font-family: Lato;
     color:white;
     background-color: #52b788;
-    background-size: contain;
+    background-size:cover;
     background-repeat:no-repeat;
     background-position: right;
 }
