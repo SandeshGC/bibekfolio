@@ -20,3 +20,6 @@ footer{
     height:25px;
     bottom:0;
 }
+a{
+    text-decoration: none;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONTACT</title>
     <link rel="stylesheet" href= "stylesheets/nav-bar.css" type="text/css" >
     <link rel="stylesheet" href= "stylesheets/body-html.css" type="text/css" >
     <style>
@@ -46,6 +46,10 @@
             border-radius: 25px;
             border:none;
         }
+        #reset{
+            background-color: white;
+            color:#2a9d8f;
+        }
         button:hover{
             background-color: #006d77;
             
@@ -76,15 +80,15 @@
         }
 
     </style>
-    <script>
+    <script> //using internal js code 
         function afterSubmit(){
-            document.getElementById("submitted").innerHTML="Your form has been submitted successfully";
+            alert("Your form has been submitted successfully!");
         }
         </script>
 </head>
 <body>
     <header>
-    <div class="nav">
+    <div class="nav"> <!--navigation bar links-->
         <a href="index.html" class="button">HOME</a>
         <a href="resume.html" class="button">RESUME</a>
         <a href="blog.html" class="button">BLOG</a>
@@ -109,7 +113,7 @@
             <input type="number" name="contact-number" placeholder="Enter your contact number" ><br>
             <label>Message</label>
             <textarea name="message" placeholder="Write your message"></textarea><br>
-            <button type="reset">Clear Form</button>
+            <button type="reset" id="reset">Clear Form</button>
             <button id="submit" type="submit" onclick="afterSubmit()">Submit</button>    
             <p id="submitted"></p>
         </form>
